@@ -1,0 +1,25 @@
+{
+    "name": "vue-lazy",
+    "version": "0.1.1",
+    "description": "vue-lazy component!",
+    "main": "src/vue-count-down.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/blue0728/vue-lazy.git"
+    },
+    "keywords": [
+        "vue",
+        "lazyload"
+        "img"
+    ],
+    "author": "Serge",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/blue0728/vue-lazy/issues"
+    },
+    "homepage": "https://github.com/blue0728/vue-lazy#readme",
+    "dependencies": {}
+}

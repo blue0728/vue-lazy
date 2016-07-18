@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello Vue-lazy</title>
+</head>
+<body>
+<style>
+*{margin:0;padding:0;}	
+a{margin: 30px auto;display: block;text-align: center;}
+p{padding-left: 20px;}
+img{
+	width: 600px;
+	height: 600px;
+	display: block;
+}
+[v-cloak] {
+    display: none;
+}
+</style>
+<div id="app">
+	<img v-for="item in src" v-lazy="item">>
+</div>
+<script src="http://cdn.bootcss.com/vue/1.0.25/vue.min.js"></script>
+<script src="../src/vue-lazy.js"></script>
+<script>
+new Vue({
+	el: '#app',
+	data: {
+		src: [
+			'http://img.haimi.com/FlvVOYJrTN10reDkx9ut_kmoiwxW',
+			'http://img.haimi.com/FlgifiFboMtKJwF7-6KWLzE-Mfwk',
+			'http://img.haimi.com/FlIIW2OJTqolOt7915AEdhoZNumP',
+			'http://img.haimi.com/FtJ770r8WWDPV_EXWLHlEaN4bcoY'
+		]
+	}
+})	
+</script>
+</body>
+</html>
