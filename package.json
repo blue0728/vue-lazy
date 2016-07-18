@@ -1,8 +1,8 @@
 {
-    "name": "vue-lazy",
+    "name": "vue-lazyload-image",
     "version": "0.1.1",
     "description": "vue-lazy component!",
-    "main": "src/vue-count-down.js",
+    "main": "src/vue-lazy.js",
     "scripts": {
         "build": "webpack"
     },
@@ -12,7 +12,7 @@
     },
     "keywords": [
         "vue",
-        "lazyload"
+        "lazyload",
         "img"
     ],
     "author": "Serge",
