@@ -109,7 +109,6 @@
 
 				function loadImg() {
 					el.src = value;
-					el.setAttribute('class', 'vue-lazy-loading')
 					el.addEventListener('error', onloadError, false)
 					el.addEventListener('load', onloadSuccess, false)
 					window.removeEventListener('scrollEnd', compute, false)
