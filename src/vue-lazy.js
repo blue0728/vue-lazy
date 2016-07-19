@@ -102,7 +102,6 @@
 		Vue.directive('lazy', {
 			update: function(value) {
 				var el = this.el;
-				el.setAttribute('class', 'vue-lazy-init')
 				el.src = obj.loading;
 				el.style.opacity = .5
 				el.style.transition = 'opacity .3s'
@@ -140,14 +139,12 @@
 
 				function onloadSuccess() {
 					el.style.opacity = 1
-					el.setAttribute('class', 'vue-lazy-load-success')
 					el.removeEventListener('load', onloadSuccess, false)
 				}
 
 				function onloadError() {
 					el.style.opacity = 1
 					el.src = obj.error
-					el.setAttribute('class', 'vue-lazy-load-error')
 					el.removeEventListener('error', onloadError, false)
 				}
 
