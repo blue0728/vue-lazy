@@ -1,6 +1,6 @@
 ## Install
 ```
-npm install vue-lazy --save
+npm install vue-lazyload-image --save
 
 ```
 
@@ -8,18 +8,18 @@ npm install vue-lazy --save
 
 ```js
 'use strict'
-import lazy from 'vue-lazy'
+import vueLazy from 'vue-lazyload-image'
 
 ----------------
 
-Vue.use(lazy,{
+Vue.use(vueLazy,{
 	error: 'error.jpg',
 	loading: 'loading.gif'
 });
 
 ---------------
 
-Vue.use(lazy);
+Vue.use(vueLazy);
 
 
 ```
